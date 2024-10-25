@@ -1,0 +1,14 @@
+@BillingAPI_HostAddress = https://localhost:7275
+
+POST {{BillingAPI_HostAddress}}/api/billing/handleorder
+Accept: application/json  
+Content-type: application/json  
+{
+    "orderNumber": "testorderid",
+    "userId": "testuserid",
+    "payableAmount": 10.00,
+    "paymentGatewayId": "stripe",
+    "description": "description test"
+}
+
+###
